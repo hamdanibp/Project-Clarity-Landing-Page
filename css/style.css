@@ -1,0 +1,753 @@
+@import "./font.css";
+@import "./header-toggle-button.css";
+
+/* SETTING DEFAULT */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.html-large-fontsize {
+  font-size: 18px;
+}
+
+body, button, input, textarea, select {
+  font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-overflow-hidden {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+
+button {
+  font-size: .6875rem;
+  line-height: 1.5;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2.3;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  font-size: .75rem;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+  color: #999;
+}
+
+.container {
+  width: 100%;
+  background: #F7F8F9;
+  overflow: hidden;
+}
+/* --- AKHIR SETTING DEFAULT --- */
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 99;
+}
+
+.header-clarity-logo {
+  transform-origin: left;
+  transform: scale(.75);
+}
+
+.header-links {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 15px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all .3s;
+}
+
+.header-links li {
+  margin-bottom: 16px;
+}
+
+.header-links li a {
+  font-size: .75rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #415123;
+  text-transform: capitalize;
+}
+
+.header-links li a:hover {
+  color: #69803e;
+  text-shadow: 0 0 7px rgba(65, 81, 35, .7);
+}
+
+.header-burger {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.header-burger span {
+  display: block;
+  width: 17px;
+  height: 3px;
+  margin-bottom: 3px;
+  background: #415123;
+  transition: .3s;
+}
+
+.header-burger span:last-child {
+  margin-bottom: 0;
+}
+/* --- AKHIR HEADER --- */
+
+/* HERO */
+.hero {
+  background: url("../assets/img/hero-banner-mobile.jpg") center/cover no-repeat;
+  min-height: calc(100vh - 50px);
+  padding: 30px 15px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #333;
+}
+
+.hero-subtitle {
+  font-size: .75rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #69803e;
+  margin-top: 9px;
+}
+
+.hero-subtitle strong {
+  font-weight: 700;
+}
+
+.hero-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 19px;
+}
+
+.hero-button-1 {
+  padding: 8px 22px;
+  background: #415123;
+  color: #fff;
+  border: 1px solid #415123;
+}
+
+.hero-button-1:hover {
+  background: #69803e;
+  border-color: #69803e;
+  color: #eaeaea;
+  border-radius: 0;
+}
+
+.hero-button-2 {
+  padding: 8px 15px;
+  background: transparent;
+  color: #415123;
+  border: 1px solid #415123;
+  margin-left: 18.5px;
+}
+
+.hero-button-2:hover {
+  background: #fff;
+  border-color: #69803e;
+  color: #69803e;
+  border-radius: 0;
+}
+/* AKHIR HERO */
+
+/* PRODUCT */
+.product {
+  padding: 0 20px;
+  padding-top: 60px;
+}
+
+.product-wrapper {
+  margin-top: 37px;
+}
+
+.product-item {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.1);
+  margin-bottom: 50px;
+  background: #fff;
+}
+
+.product-item:last-child {
+  margin-bottom: 0;
+}
+
+.product-figure {
+  width: 100%;
+  background: #fff9f2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-supplement {
+  transform: scale(.6);
+}
+
+.product-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.product-name, 
+.product-price {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-qty {
+  font-size: .75rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #999;
+  margin-top: 6px;
+}
+
+.product-button {
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  background: #415123;
+  margin-top: 19px;
+}
+
+.product-item:hover .product-button {
+  background: #69803e;
+  border-color: #69803e;
+  color: #eaeaea;
+  border-radius: 0;
+}
+/* AKHIR PRODUCT */
+
+/* CONSUMER */
+.consumer {
+  padding-top: 85px;
+}
+
+.consumer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.consumer-people {
+  background: url("../assets/img/young-people-crop.png") center/cover no-repeat;
+  padding: 36px 20px 56px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.consumer-people:nth-child(2) {
+  background: url("../assets/img/elderly-crop.png") center/cover no-repeat;
+}
+
+.consumer-people:hover,
+.consumer-people:nth-child(2):hover {
+  background-size: calc(100% + 10px);
+}
+
+.consumer-people::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(65, 81, 35, .62);
+}
+
+.consumer-detail {
+  position: relative;
+  z-index: 2;
+}
+
+.consumer-people-title {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
+}
+
+.consumer-people-subtitle {
+  font-size: .6875rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #fff;
+}
+
+.consumer-people-button {
+  margin-top: 12px;
+  background: transparent;
+  padding: 4px 16px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.consumer-people:hover .consumer-people-button {
+  background: #fff;
+  border-color: #69803e;
+  color: #69803e;
+  border-radius: 0;
+}
+/* AKHIR CONSUMER */
+
+/* ABOUT */
+.about {
+  padding: 0 20px;
+  padding-top: 60px;
+}
+
+.about-title {
+  line-height: 36px;
+}
+
+.about-subtitle {
+  margin-top: 10px;
+}
+
+.about-wrapper {
+  margin-top: 21px;
+}
+
+.about-item {
+  padding: 20px 28px;
+  background: #fff;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 32px 72px rgba(51, 51, 51, .03);
+}
+
+.about-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-figure {
+  width: 60px;
+  height: 60px;
+  background: #415123;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.about-item-title {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #333;
+  margin-top: 27px;
+}
+
+.about-item-subtitle {
+  font-size: .75rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999;
+  margin-top: 10px;
+}
+/* AKHIR ABOUT */
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 0 25px;
+  padding-top: 60px;
+}
+
+.testimonials-wrapper {
+  margin-top: 24px;
+  padding: 44px 25px 41px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.03);
+}
+
+.testimonials-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-star {
+  margin-right: 4px;
+}
+
+.testimonials-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-stars {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-desc {
+  margin-top: 16px;
+  font-size: .75rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.testimonials-user {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonials-picture {
+  width: 40px;
+  height: 40px;
+  background: #c4c4c4;
+  border-radius: 50%;
+  margin-right: 11px;
+}
+
+.testimonials-name {
+  font-size: .625rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #333;
+}
+
+.testimonials-address {
+  font-size: .5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #999;
+}
+/* AKHIR TESTIMONIALS */
+
+/* SUBSCRIBE */
+.subscribe {
+  margin-top: 48px;
+  background: url("../assets/img/newsletter-crop.png") center/cover no-repeat;
+  padding: 97px 16px;
+  text-align: center;
+  position: relative;
+}
+
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(65, 81, 35, 0.86);
+}
+
+.subscribe-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscribe-title {
+  line-height: 1.6;
+  color: #fff;
+}
+
+.subscribe-subtitle {
+  margin-top: 9px;
+  color: #fff;
+}
+
+.subscribe-form {
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 3px;
+  margin-top: 35px;
+}
+
+.subscribe-icon-email {
+  transform: scale(.6);
+}
+
+.subscribe-form-email {
+  font-size: .5625rem;
+  line-height: 1.5;
+  color: #999;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  flex: auto;
+}
+
+.subscribe-form-button {
+  padding: 3px 13px;
+  border-radius: 5px;
+  background: #415123;
+  color: #fff;
+}
+
+.subscribe-form-button:hover {
+  background: #69803e;
+  border-color: #69803e;
+  color: #eaeaea;
+  border-radius: 0;
+}
+/* AKHIR SUBSCRIBE */
+
+/* FOOTER */
+.footer {
+  background: #415123;
+  text-align: center;
+  padding: 68px 19px 20px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-desc {
+  margin-top: 9px;
+  font-size: .75rem;
+  line-height: 2.3;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer-info,
+.footer-help {
+  margin-top: 53px;
+}
+
+.footer-info-title,
+.footer-help-title {
+  font-size: .875rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #cbd8b4;
+}
+
+.footer-info-item,
+.footer-help-item {
+  margin-top: 17px;
+}
+
+.footer-info-item li,
+.footer-help-item li {
+  margin-top: 12px;
+}
+
+.footer-info-item li a,
+.footer-help-item li a {
+  font-size: .75rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer-info-item li a:hover,
+.footer-help-item li a:hover {
+  color: #999;
+}
+
+.footer-contact {
+  margin-top: 55px;
+}
+
+.footer-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-phone,
+.footer-mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-main {
+  margin-top: 10px;
+}
+
+.footer-phone-icon,
+.footer-mail-icon {
+  transform: scale(.7);
+}
+
+.footer-phone-number,
+.footer-mail-address {
+  font-size: .75rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 3px;
+}
+
+.footer-phone-number:hover, 
+.footer-mail-address:hover {
+  color: #999;
+}
+
+
+.footer-socmed {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socmed-figure {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 27px;
+  margin-left: 17px;
+}
+
+.footer-socmed-figure:hover {
+  opacity: 1;
+  border-radius: 0;
+}
+
+.footer-socmed-figure:hover .footer-socmed-icon {
+  filter: brightness(0) invert(1);
+}
+
+.footer-socmed-figure.ig:hover {
+  background: #c32aa3;
+}
+
+.footer-socmed-figure.tw:hover {
+  background: #1da1f2;
+}
+
+.footer-socmed-figure.fb:hover {
+  background: #3b5998;
+}
+
+.footer-socmed-figure:first-child {
+  margin-left: 0;
+}
+
+.footer-divider {
+  margin-top: 53px;
+  border-top: 1px solid #69803e;
+}
+
+.footer-copyright {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.footer-copyright-desc {
+  font-size: .6875rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #cbd8b4;
+}
+/* AKHIR FOOTER */
+
+/* TOP-BUTTON */
+.top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.375rem;
+  width: 40px;
+  height: 40px;
+  color: #415123;
+  background: #fff;
+  border: 2px solid #415123;
+  z-index: 3;
+  border-radius: 50%;
+  display: none;
+  transition: none;
+}
+/* AKHIR TOP-BUTTON */

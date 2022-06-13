@@ -1,0 +1,149 @@
+.header-toggle-wrapper {
+  display: flex;
+  flex: auto;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+/* DARK-LIGHT BUTTON */
+.button-light-mode {
+  border-radius: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.light-desc {
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 5px;
+  color: #c09d20;
+  display: none;
+}
+
+.fa-sun {
+  font-size: 20px;
+  color: #c09d20;
+}
+
+.fa-moon {
+  font-size: 20px;
+  color: #D7D6CE;
+}
+
+/* -- dark-mode active */
+.dark-body .dark-mode {
+  border-color: #D7D6CE;
+  background: #232323;
+}
+
+.dark-body .light-desc {
+  color: #D7D6CE;
+}
+
+.dark-body .container, .dark-body .product-figure {
+  background: #666;
+}
+
+.dark-body h1, 
+.dark-body h6,
+.dark-body h2,
+.dark-body h3,
+.dark-body h4,
+.dark-body blockquote,
+.dark-body p {
+  color: #fff;
+}
+
+.dark-body .product-item, 
+.dark-body .about-item,
+.dark-body .testimonials-wrapper{
+  background: #333;
+}
+
+.dark-body .header, 
+.dark-body .header-links,
+.dark-body .footer {
+  background: #222;
+}
+
+.dark-body .header-clarity-logo,
+.dark-body .header-burger,
+.dark-body .header-links li a {
+  filter: brightness(0) invert(1);
+}
+
+.dark-body .hero::before,
+.dark-body .consumer-people::before,
+.dark-body .subscribe::before {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.dark-body .hero-button-1, 
+.dark-body .product-button,
+.dark-body .hero-button-1:hover,
+.dark-body .product-button:hover {
+  background: #fff;
+  color: #415123;
+}
+
+.dark-body .hero-button-2, 
+.dark-body .consumer-people-button { 
+  border-color: #fff;
+  color: #fff;
+}
+
+.dark-body .hero-button-2:hover,
+.dark-body .consumer-people-button:hover {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+/* AKHIR DARK-LIGHT BUTTON */
+
+/* INCREASE FONT SIZE BUTTON */
+.button-fontsize {
+  border-radius: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.fontsize-icon-active.button-fontsize {
+  background: #415123;
+}
+
+.fontsize-icon {
+  font-size: 22px;
+  color: #415123;
+  cursor: pointer;
+}
+
+.fontsize-icon-active .fontsize-icon {
+  color: #fff;
+}
+/* AKHIR INCREASE FONT SIZE BUTTON */
+
+
+/* HEADER MENU TOGGLE */
+.toggle-header .header-links {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toggle-header .header-burger .line1 {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.toggle-header .header-burger .line2 {
+  opacity: 0;
+}
+
+.toggle-header .header-burger .line3 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+/* AKHIR HEADER MENU TOGGLE */

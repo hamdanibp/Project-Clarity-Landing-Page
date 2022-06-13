@@ -1,0 +1,696 @@
+@media all and (min-width: 365px) {
+  /* HEADER */
+  .header {
+    padding: 14px 25px 9px;
+  }
+
+  .header-links {
+    padding: 25px;
+  }
+  /* AKHIR HEADER */
+
+  /* HERO */
+  .hero {
+    padding: 0 30px;
+    padding-top: 87px;
+  }
+
+  .hero-button-1 {
+    padding: 11px 27px;
+  }
+
+  .hero-button-2 {
+    padding: 11px 22px;
+  }
+  /* AKHIR HERO */
+
+  /* PRODUCT */
+  .product {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+  /* AKHIR PRODUCT */
+
+  /* ABOUT */
+  .about {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .about-main {
+    padding: 0 20px;
+  }
+  /* AKHIR ABOUT */
+
+  /* TESTIMONIALS */
+  .testimonials-main {
+    padding: 0 77px;
+  }
+  /* AKHIR TESTIMONIALS */
+
+  /* SUBSCRIBE */
+  .subscribe {
+    padding: 97px 26px;
+  }
+
+  .subscribe-form {
+    padding: 7px 9px;
+  }
+
+  .subscribe-icon-email {
+    transform: scale(.8);
+  }
+
+  .subscribe-form-button {
+    padding: 6px 17px;
+  }
+  /* AKHIR SUBSCRIBE */
+
+  /* FOOTER */
+  .footer-main {
+    padding: 0 25px;
+  }
+
+  .footer-phone-icon,
+  .footer-mail-icon {
+    transform: scale(1);
+  }
+
+  .footer-phone-number,
+  .footer-mail-address {
+    margin-left: 7px;
+  }
+  /* AKHIR FOOTER */
+}
+
+@media all and (min-width: 768px) {
+  button {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  h3 {
+    font-size: .875rem;
+    line-height: 2;
+  }
+
+  /* LIGHT-DARK BUTTON */
+  .light-desc {
+    display: block;
+  }
+  /* AKHIR LIGHT-DARK BUTTON */
+
+  /* HEADER */
+  .header {
+    height: 70px;
+  }
+
+  .header-clarity-logo {
+    transform: scale(1);
+  }
+
+  .header-links {
+    min-height: calc(100vh - 70px);
+    top: 70px;
+  }
+
+  .header-links li a {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+  /* AKHIR HEADER */
+
+  /* HERO */
+  .hero {
+    min-height: calc(75vh - 70px);
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+  
+  .hero-subtitle {
+    font-size: .875rem;
+    line-height: 2;
+  }
+  /* AKHIR HERO */
+
+  /* PRODUCT */
+  .product {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .product-supplement {
+    transform: scale(.8);
+  }
+
+  .product-name, 
+  .product-price {
+    font-size: 1.125rem;
+  }
+
+  .product-qty {
+    font-size: .875rem;
+  }
+  /* AKHIR PRODUCT */
+
+  /* CONSUMER */
+  .consumer-people-title {
+    font-size: 2.25rem;
+    line-height: 1.77;
+  }
+  
+  .consumer-people-subtitle {
+    font-size: .875rem;
+    line-height: 2;
+  }
+
+  .consumer-people-button {
+    padding: 16px 36px;
+  }
+  /* AKHIR CONSUMER */
+
+  /* ABOUT */
+  .about {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about-wrapper {
+    margin-top: 31px;
+  }
+
+  .about-item {
+    padding: 24px 35px 18px;
+  }
+
+  .about-figure {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .about-item-title {
+    font-size: 1.25rem;
+  }
+  
+  .about-item-subtitle {
+    font-size: .875rem;
+    line-height: 2;
+  }
+  /* AKHIR ABOUT */
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .testimonials-wrapper {
+    padding: 36px 0;
+    padding-left: 121px;
+    padding-right: 108px;
+  }
+
+  .testimonials-desc {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  
+  .testimonials-name {
+    font-size: .75rem;
+  }
+  
+  .testimonials-address {
+    font-size: .625rem;
+  }
+  /* AKHIR TESTIMONIALS */
+
+  /* SUBSCRIBE */
+  .subscribe {
+    margin-top: 156px;
+    padding: 64px 120px 77px;
+    text-align: center;
+    position: relative;
+  }
+
+  .subscribe-form {
+    padding: 13px 20px;
+    margin-top: 26px;
+  }
+  
+  .subscribe-icon-email {
+    transform: scale(1);
+  }
+  
+  .subscribe-form-email {
+    font-size: 0.875rem;
+    padding-left: 20px;
+  }
+  
+  .subscribe-form-button {
+    padding: 11px 32px;
+  }
+  /* AKHIR SUBSCRIBE */
+
+  /* FOOTER */
+  .footer {
+    padding: 68px 55px 21px;
+    text-align: left;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .footer-main, .footer-info, .footer-help, .footer-contact {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  .footer-info,
+  .footer-help {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-help-item li a span {
+    display: block;
+  }
+
+  .footer-contact-wrapper {
+    align-items: start;
+  }
+
+  .footer-phone-number {
+    margin-left: 14px;
+  }
+
+  .footer-mail {
+    margin-top: 21px;
+  }
+
+  .footer-mail-address {
+    margin-left: 19px;
+  }
+
+  .footer-socmed {
+    margin-top: 21px;
+  }
+
+  .footer-copyright-desc {
+    font-size: .875rem;
+  }
+  /* AKHIR FOOTER */
+}
+
+@media all and (min-width: 1199px) {
+  .body-overflow-hidden {
+    overflow: auto;
+  }
+
+  .container {
+    overflow: auto;
+  }
+
+  /* TOP-BUTTON */
+  .top-button {
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+  }
+  /* AKHIR TOP-BUTTON */
+
+  /* HEADER */
+  .header {
+    padding: 0 50px;
+  }
+
+  .header-links {
+    width: 35%;
+    min-height: 0;
+    position: static;
+    background: none;
+    padding: 0;
+    opacity: 1;
+    transform: translateX(0);
+    transition: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-links li {
+    margin-bottom: 0;
+  }
+  
+  .header-burger {
+    display: none;
+  }
+  /* AKHIR HEADER */
+
+  /* HERO */
+  .hero {
+    background-image: url("../assets/img/hero-banner.jpg");
+    min-height: calc(100vh - 70px);
+    padding-top: 128px;
+    padding-left: 50px;
+    margin-top: 70px;
+  }
+
+  .hero-title span {
+    display: block;
+  }
+
+  .hero-subtitle {
+    margin-top: 14px;
+  }
+
+  .hero-subtitle span {
+    display: block;
+  }
+
+  .hero-article {
+    width: 65%;
+    text-align: left;
+    align-items: start;
+  }
+
+  .hero-button-wrapper {
+    justify-content: start;
+    margin-top: 26px;
+  }
+  /* AKHIR HERO */
+
+  /* PRODUCT */
+  .product {
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .product-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-figure {
+    padding: 40px 0;
+  }
+
+  .product-desc {
+    margin-top: 24px;
+  }
+
+  .product-button {
+    margin-top: 30px;
+  }
+
+  .product-item {
+    padding: 24px;
+    margin-bottom: 0;
+    width: 380px;
+    margin-right: 20px;
+  }
+
+  .product-supplement {
+    transform: scale(1);
+  }
+  /* AKHIR PRODUCT */
+
+  /* CONSUMER */
+  .consumer {
+    padding-top: 101px;
+  }
+
+  .consumer-wrapper {
+    flex-direction: row;
+  }
+
+  .consumer-people {
+    padding-top: 98px;
+    padding-bottom: 97px;
+  }
+  /* AKHIR CONSUMER */
+
+  /* ABOUT */
+  .about {
+    padding-top: 104px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-item {
+    padding: 24px 33px 18px;
+    width: 380px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .about-figure {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .about-item-title {
+    margin-top: 31px;
+  }
+  
+  .about-item-subtitle {
+    margin-top: 12px;
+  }
+  /* AKHIR ABOUT */
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding-top: 106px;
+  }
+
+  .testimonials-wrapper {
+    margin: auto;
+    width: 780px;
+    margin-top: 32px;
+    padding: 36px 115px;
+  }
+  /* AKHIR TESTIMONIALS */
+
+  /* SUBSCRIBE */
+  .subscribe-form {
+    width: 600px;
+    align-self: center;
+  }
+  /* AKHIR SUBSCRIBE */
+
+  /* FOOTER */
+  .footer-desc {
+    font-size: .875rem;
+    line-height: 2;
+  }
+  
+  .footer-info-title,
+  .footer-help-title {
+    font-size: 1.125rem;
+  }
+  
+  .footer-info-item li a,
+  .footer-help-item li a {
+    font-size: .875rem;
+  }
+  
+  .footer-phone-number,
+  .footer-mail-address {
+    font-size: .875rem;
+  }
+  /* AKHIR FOOTER */
+}
+
+@media all and (min-width: 1366px) {
+  /* HERO */
+  .hero {
+    min-height: calc(70vh - 70px);
+  }
+  /* AKHIR HERO */
+}
+
+@media all and (min-width: 1920px) {
+  button {
+    font-size: 1.125rem;
+  }
+
+  h2 {
+    font-size: 3.125rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* HEADER */
+  .header-links li a {
+    font-size: 1.375rem;
+    letter-spacing: 3px;
+  }
+  /* AKHIR HEADER */
+
+  /* HERO */
+  .hero {
+    padding-top: 0;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 4.125rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.375rem;
+    margin-top: 30px;
+  }
+
+  .hero-button-wrapper {
+    margin-top: 41px;
+  }
+
+  .hero-button-1 {
+    padding: 21px 37px;
+  }
+
+  .hero-button-2 {
+    margin-left: 25px;
+    padding: 21px 32px;
+  }
+  /* AKHIR HERO */
+
+  /* PRODUCT */
+  .product-desc {
+    margin-top: 35px;
+  }
+
+  .product-name, 
+  .product-price {
+    font-size: 1.375rem;
+  }
+
+  .product-qty {
+    font-size: 1rem;
+  }
+
+  .product-button {
+    margin-top: 35px;
+  }
+  /* AKHIR PRODUCT */
+
+  /* CONSUMER */
+  .consumer-people-title {
+    font-size: 2.875rem;
+  }
+
+  .consumer-people-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .consumer-people-button {
+    margin-top: 1.375rem;
+  }
+  /* AKHIR CONSUMER */
+
+  /* ABOUT */
+  .about-item-title {
+    font-size: 1.6875rem;
+  }
+
+  .about-item-subtitle {
+    font-size: 1rem;
+  }
+  /* AKHIR ABOUT */
+
+  /* TESTIMONIALS */
+  .testimonials-wrapper {
+    width: 920px;
+  }
+
+  .testimonials-star {
+    transform: scale(1.2);
+    margin-right: 6px;
+  }
+
+  .testimonials-desc {
+    font-size: 1.375rem;
+  }
+
+  .testimonials-user {
+    margin-top: 22px;
+  }
+
+  .testimonials-picture {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonials-name {
+    font-size: 1rem;
+  }
+  
+  .testimonials-address {
+    font-size: .75rem;
+  }
+  /* AKHIR TESTIMONIALS */
+
+  /* SUBSCRIBE */
+  .subscribe-form {
+    width: 800px;
+  }
+  /* AKHIR SUBSCRIBE */
+
+  /* FOOTER */
+  .footer-socmed-figure {
+    width: 35px;
+    height: 35px;
+  }
+  /* AKHIR FOOTER */
+}
+
+@media all and (min-width: 2560px) {
+  /* FOOTER */
+  .footer-clarity-logo {
+    transform-origin: left top;
+    transform: scale(1.5);
+  }
+
+  .footer-desc {
+    margin-top: 24px;
+  }
+
+  .footer-info-title,
+  .footer-help-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-desc,
+  .footer-info-item li a, 
+  .footer-help-item li a, 
+  .footer-phone-number, 
+  .footer-mail-address, 
+  .footer-copyright-desc {
+    font-size: 1.25rem;
+  }
+  /* AKHIR FOOTER */
+}
